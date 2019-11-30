@@ -1,0 +1,126 @@
+$img-px:150px;
+$transition:all .5s;
+.ibps-desktop-page {
+  height: 100%;
+  .el-card__body{
+    position: relative;
+    .hidden{
+      overflow: hidden;
+    }
+    .body-chart{
+      color: red;
+      >div:last-child{
+        top: 0!important;
+      }
+    }
+    .draw-enter-to,.draw-leave{
+      height: 200px;
+    }
+    // 未读消息
+    .tabs-title{
+      position: relative;
+      z-index: 9999;
+    }
+    .tabs-toolbar{
+      position: absolute;
+      right:20px; 
+      top: 20px;
+      z-index: 9999;
+    }
+    .tabs-contents{
+      position: relative;
+      top: -25px;
+    }
+    .el-tabs__nav{
+      float: right;
+      margin-right:200px;
+    }
+    .tabs-content{
+      // overflow-y: scroll;
+      transition:$transition;
+    }
+    // 个人信息
+      .ibps-item-content{
+        img{
+            border-radius:50%;
+            width:100%; 
+            // width:$img-px;
+            // height:$img-px;
+          }
+          .ibps-item-content-title{
+            margin-bottom: 12px;
+            color: rgba(0,0,0,.85);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+          }
+          .ibps-item-content-label{ 
+            flex: 1 1 auto;
+            color: rgba(0,0,0,.45);
+            line-height: 16px;
+          }
+          .ibps-item-content-extra{
+            color: rgba(0,0,0,.85); 
+            font-size: 16px;
+            font-family: Tahoma,Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+          }
+          .ibps-list-icon{
+            margin-left: 20px;
+          }
+          .ibps-list-col-main{
+            margin:0 0 0 3% !important; 
+          }
+          .ibps-list-col-icon{
+            width: 150px;
+            height: 150px;
+            >div{
+              width:100%;
+              height:100%;
+              >span{ 
+                width:100%;
+                height:100%;
+                i{
+                  width: 100%;
+                  height: 100%;
+                  display: inline-block; 
+                  font-size: 130px;
+                }
+              }
+            }
+          }
+      }
+    // 快捷导航
+    .nav-content{ 
+      overflow: hidden;
+      transition:$transition; 
+      span{
+        margin:0 5px 0 0 ;
+      }
+    }
+  } 
+  .bg-red {
+    background-color: #e7505a;
+  }
+  .bg-green {
+    background-color: #32c5d2;
+  }
+  .bg-red-pink {
+    background-color: #E08283;
+  }
+  .bg-green-meadow {
+    background-color: #1BBC9B;
+  }
+  .bg-grey-steel {
+    background-color: #e9edef;
+  }
+  .bg-yellow-crusta {
+    background-color: #f3c200;
+  }
+  .bg-blue {
+    background: #3598dc !important; }
+
+  .bg-blue-madison {
+    background: #578ebe !important;
+   }
+
+}

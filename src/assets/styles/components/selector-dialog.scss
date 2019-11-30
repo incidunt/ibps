@@ -1,0 +1,64 @@
+.ibps-selector-dialog{
+  .ibps-selector-header{
+    line-height: 30px;
+    border: dashed 1px #CCC;
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 5px 2px;
+  }
+  .ibps-selector-header .el-tag,.selector-list .el-tag{
+    vertical-align: middle;
+    margin: 0 2px;
+  }
+
+  .selector-list {
+    display: block;
+    margin-top:0;
+    padding: 0;
+    background: #fff;
+    min-height: 32px;
+    border: dashed 1px #CCC;
+    margin-bottom: 2px;
+    overflow: auto;
+  }
+  .selector-list.disabled{
+    background-color: #f5f7fa;
+    border-color: #e4e7ed;
+    color: #c0c4cc;
+
+  }
+  .selector-list.disabled label{
+    cursor: not-allowed;
+  }
+  .selector-list label {
+    margin: 0;
+    display: table;
+    width: 100%;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  .selector-list label .plus {
+    font-size: 20px;
+    width: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 0;
+    cursor: pointer;
+  }
+  .selector-list .selector-empty {
+    padding: 0 10px 0 0;
+    text-align: left;
+    line-height: 2.3;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .el-dialog__body{
+    padding: 0;
+  }
+
+  .ibps-container-crud__footer{
+    border-left: 1px solid #EBEEF5
+  }
+}
+

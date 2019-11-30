@@ -1,0 +1,148 @@
+@import '@/assets/styles/unit/color.scss';
+
+.pull-height{
+  height: 100%;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.login-container::before {
+  z-index: -999;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/static/images/login/login.png");
+  background-size: cover;
+}
+.login-info-list {
+  padding: 0;
+  margin: 0;
+}
+.login-info {
+  padding-left: 60px;
+}
+.login-info-title {
+  line-height: 90px;
+}
+.login-info-item {
+  font-size: 14px;
+  padding: 10px;
+}
+.login-border {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.login-main {
+  padding: 10px 60px;
+  width: 450px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fff;
+  & > .el-tabs {
+    margin-top: 30px;
+  }
+}
+.login-main > h3 {
+  margin-bottom: 20px;
+  border-left: 4px solid #409EFF;
+  span {
+    margin-left: 5px;
+    color: #409EFF;
+  }
+}
+.login-main > p {
+  color: #76838f;
+}
+.login-submit {
+  width: 100%;
+}
+.login-form {
+  margin: 20px 0;
+}
+.login-code {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.login-code-img {
+  width: 120px;
+  height: 36px;
+  background-color: #eee;
+  border: 1px solid #f0f0f0;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  text-align: center;
+}
+.el-form-item--small{
+  .login-code-img {
+    height: 31px !important;
+  }
+}
+.el-form-item--medium{
+  .login-code-img {
+    height: 36px !important;
+  }
+}
+.el-form-item--mini{
+  .login-code-img {
+    height: 27px !important;
+  }
+}
+
+.show-pwd {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  font-size: 16px;
+  color: #889aa4;
+  cursor: pointer;
+  user-select: none;
+}
+
+.login-title-container {
+  position: relative;
+  .title {
+    font-size: 26px;
+    font-weight: 400;
+    color:$color-primary;
+    margin: 0px auto 40px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  .lang-select {
+    color: $color-primary;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+  }
+  .theme-switch{
+    position: absolute;
+    top: 0;
+    right: 22px;
+  }
+}
+.copyright {
+  text-align: center;
+  color:$color-primary;
+  font-size: 13px;
+  a {
+    text-decoration: underline;
+  }
+}
+.forget,.register{
+   color: #337ab7;
+   text-decoration: underline;
+}

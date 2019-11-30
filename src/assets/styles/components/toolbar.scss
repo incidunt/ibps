@@ -1,0 +1,73 @@
+
+.ibps-toolbar {
+  .el-button+.el-button {
+    margin-left: 5px;
+  }
+  .toolbar-box {
+    padding: 5px;
+    border: 1px solid #ebeef5;
+  }
+  .buttons {
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    float: left;
+  }
+  .tools {
+    padding: 0;
+    padding-right: 5px;
+    float: right;
+  }
+  .header {
+    padding: 5px 0px;
+    background-color: #f5f5f7;
+    border: 1px solid #ebeef5;
+    height: 45px;
+    .tools>a {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 24px;
+      text-decoration: none;
+      color: #d7d7d7;
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+  }
+
+  .search-label:not(.button-div) {
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-right: 5px;
+    font-weight: bold;
+    width: 80px;
+    text-align: right;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    color: #939596;
+  }
+  .inline {
+    display: inline-block;
+  }
+  .clear {
+    clear: both;
+  }
+  
+  &--medium {
+    .header {
+      height: 40px;
+    }
+  }
+  &--small {
+    .header {
+      height: 35px;
+    }
+  }
+  &--mini {
+    .header {
+      height: 30px;
+    }
+  }
+}

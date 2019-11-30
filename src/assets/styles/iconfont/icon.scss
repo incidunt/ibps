@@ -1,0 +1,80 @@
+[class*=" ibps-icon-"], [class^=ibps-icon-]{
+	font-family: "ibps-icon" !important;
+	/* 以下内容参照第三方图标库本身的规则 */
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	// vertical-align: baseline;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.ibps-icon-lg {
+	font-size: 1.33333333em;
+	line-height: .75em;
+	vertical-align: -15%
+}
+
+.ibps-icon-2x {
+	font-size: 2em
+}
+
+.ibps-icon-3x {
+	font-size: 3em
+}
+
+.ibps-icon-4x {
+	font-size: 4em
+}
+
+.ibps-icon-5x {
+	font-size: 5em
+}
+.ibps-icon-fw {
+	width: 1.28571429em;
+	text-align: center
+}
+
+.ibps-icon-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.ibps-icon-stack-1x,
+.ibps-icon-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.ibps-icon-stack-1x {
+  line-height: inherit;
+}
+.ibps-icon-stack-2x {
+  font-size: 2em;
+}
+
+.ibps-icon-number:before { 
+	content: "N";
+	font-weight: bold;
+ }
+.ibps-icon-date:before {
+  content: "D";
+  color: #1c84c6 !important;
+  font-weight: bold;
+}
+.ibps-icon-varchar:before {
+	content: "S";
+	color: #23c6c8 !important;
+	font-weight: bold;
+}
+.ibps-icon-clob:before {
+	content: "C";
+	color: red !important;
+	font-weight: bold;
+}

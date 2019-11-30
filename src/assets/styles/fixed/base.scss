@@ -1,0 +1,37 @@
+// 优化显示
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  #app {
+    @extend %full;
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    a,
+    a:focus,
+    a:hover {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+
+//浏览器滚动条样式
+::-webkit-scrollbar-track-piece {
+  background: #e8e8e8;
+}
+::-webkit-scrollbar {
+	width: 8px;
+	height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9093994d;
+  border-radius: 5px;
+}

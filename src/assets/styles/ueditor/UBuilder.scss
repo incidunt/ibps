@@ -1,0 +1,153 @@
+.section{margin:5px auto auto;width: 720px;overflow: hidden;}
+
+.section .toolTip{width: 73px;height: 35px; background: url('/static/images/ueditor/tooltip.png') no-repeat;color: white;line-height: 35px;text-align: center;}
+
+.section h3{font-size: 16px;font-weight: 500;height:32px; line-height:32px;margin: 15px 0 5px;color: #4578C4;}
+.section .item{float: left;overflow: hidden;font-size: 14px;}
+
+.section .funSelect{margin-top: 5px;}
+.section .selectHead span{display: inline-block;width: 60px;height: 32px;color: #fff; text-align: center;cursor: pointer;line-height: 32px; background: #006DAE;}
+.section .selectHead span.focus{background-color: #085EA7;}
+
+.section .selectBody{width: 99%;height: 63px;background: url('/static/images/ueditor/selected-bg.png') no-repeat;}
+.section .selectBody .dragBox{margin-top: 1px;float:left;width:31px;height:30px;cursor:pointer;background-image: url(/static/images/ueditor/icons.png);background-repeat: no-repeat;}
+
+.section .funTip{margin: 5px 0;overflow: hidden;}
+.section .funCount{float:left;font-weight: bold;}
+
+.section .addSeparate{float: right; cursor:pointer;width: 28px;height: 20px;    margin: 3px 15px 0 3px;line-height: 20px;text-align:center;background-color: #255FB9;color: #fff;}
+.section .addSeparate:hover{background-color: #5A94F1;}
+
+
+.section .addFun{float: right; cursor:pointer;width: 28px;height: 20px;margin-top:3px;line-height: 20px;text-align:center;background-color: #255FB9;color: #fff;}
+.section .addFun:hover{background-color: #5A94F1;}
+
+.section .delFun{float: right;cursor: pointer; width: 28px;height: 20px;margin:3px 15px 0 3px;line-height: 20px;text-align:center;background-color: #255FB9;color: #fff;}
+.section .delFun:hover{background-color: #5A94F1;}
+
+.section .clearFun{float:right;width:67px; height:24px;margin-right:25px;text-align: center;line-height: 24px;cursor: pointer;background-color: #255FB9;color: #fff;}
+.section .clearFun:hover{background-color: #5A94F1;}
+
+.section .dragCon {background: url('/static/images/ueditor/selected-bg.png') no-repeat;padding-bottom: 1px}
+.section .dragCon .dragContainer { width: 99%; }
+.section .dragBox {cursor: pointer; margin-top: 1px;float: left;width: 31px;height: 30px;background-image: url(/static/images/ueditor/icons.png);background-repeat: no-repeat;}
+
+.section .config{border-top: 1px solid #ccc; padding: 5px;overflow: hidden;line-height: 32px;}
+.section .config label{margin-right: 10px;}
+.section .config label input{position: relative;top: 2px;margin-right: 2px;}
+
+.section .selectUI {width: 640px;margin: 0 auto;overflow: hidden;}
+.section .selectUI select{resize: none;position: static;zoom: 1;outline:none;display: block;height: 100px;width: 250px;}
+
+.selectUI .con{float: left;margin-right: 30px;}
+
+.selectUI .con .moveCon{margin-top: 45px;}
+.selectUI .con .arrows{font-size: 18px;font-weight:500;color: #fff;cursor: pointer;width: 35px;height: 30px;
+    line-height:30px;background-color: #255FB9;margin-top: 5px;text-align: center;}
+.selectUI .con .arrows:hover{background-color: #5A94F1;}
+
+.selectUI .con .langTip{overflow: hidden;}
+.selectUI .con .langTip .txt{float:left;color: #5E5E5E ;}
+.selectUI .con .langTip .btn{float: right;color: #CF5D4E;cursor: pointer;}
+.selectUI .con .langTip .btn:hover{color: #F01C00;}
+
+
+.edui-icon {
+	float: left;
+width: 30px !important;
+    height: 30px !important;
+    background: url('/static/images/ueditor/icons.png') ;
+    background-repeat: no-repeat;
+ }
+
+/*toolbar 工具栏*/
+.bold                 { background-position: 0 0}
+.italic               { background-position: -31px 0}
+.underline            { background-position: -62px 0}
+.fontborder            { background-position: -31px -87px;}
+.insertunorderedlist  { background-position: -93px 0}
+.insertorderedlist    { background-position: -124px 0}
+.redo                 { background-position: -155px 0}
+.undo                 { background-position: -186px 0}
+.justifyleft          { background-position: -217px 0}
+.justifycenter        { background-position: -248px 0}
+.justifyright         { background-position: -279px 0}
+.justifyjustify       { background-position: -310px 0}
+.indent               { background-position: -341px 0}
+.removeformat         { background-position: -372px 0}
+.subscript            { background-position: -403px 0}
+.superscript          { background-position: -434px 0}
+.forecolor            { background-position: -465px 0}
+.backcolor            { background-position: -496px 0}
+.blockquote           { background-position: -527px 0}
+.directionalityltr    { background-position: -558px 0}
+.directionalityrtl    { background-position: -589px 0}
+.unlink               { background-position: -620px 0}
+.link                 { background-position: -651px 0}
+.simpleupload         { background-position: 0 -31px}
+.insertimage          { background-position: 0 -88px}
+.emotion              { background-position: -31px -31px}
+.insertvideo          { background-position: -62px -31px}
+.fullscreen           { background-position: -93px -31px}
+.date                 { background-position: -124px -31px}
+.time                 { background-position: -155px -31px}
+.wordimage            { background-position: -186px -31px}
+.map                  { background-position: -217px -31px}
+.gmap                 { background-position: -248px -31px}
+.pagebreak            { background-position: -279px -31px}
+.cleardoc             { background-position: -310px -31px}
+.selectall            { background-position: -341px -31px}
+.strikethrough        { background-position: -372px -31px}
+.formatmatch          { background-position: -403px -31px}
+.spechars             { background-position: -434px -31px}
+.print                { background-position: -465px -31px}
+.searchreplace        { background-position: -496px -31px}
+.preview              { background-position: -527px -31px}
+.pasteplain           { background-position: -558px -31px}
+.source               { background-position: -589px -31px}
+.separate             { background-position: -620px -31px}
+.horizontal           { background-position: -651px -31px}
+.mergecells           { background-position: 0 -62px}
+.inserttable          { background-position: -31px -62px}
+.mergeright           { background-position: -62px -62px}
+.mergedown            { background-position: -93px -62px}
+.splittorows          { background-position: -124px -62px}
+.splittocols          { background-position: -155px -62px}
+.splittocells         { background-position: -186px -62px}
+.insertparagraphbeforetable{ background-position: -217px -62px}
+.deletetable          { background-position: -248px -62px}
+.deletecol            { background-position: -279px -62px}
+.deleterow            { background-position: -310px -62px}
+.insertcol            { background-position: -341px -62px}
+.insertrow            { background-position: -372px -62px}
+.anchor               { background-position: -403px -62px}
+.lineheight           { background-position: -434px -62px}
+.insertframe          { background-position: -465px -62px}
+.imagenone            { background-position: -496px -62px}
+.imageleft            { background-position: -527px -62px}
+.imageright           { background-position: -558px -62px}
+.imagecenter          { background-position: -589px -62px}
+.customstyle          { background-position: -620px -90px}
+.paragraph            { background-position: -589px -90px}
+.fontfamily           { background-position: -558px -92px}
+.fontsize             { background-position: -651px -90px}
+.insertcode           { background-position: -434px -62px}
+.help                 { background-position: -527px -90px}
+.attachment           { background-position: -465px -90px}
+.autotypeset          { background-position: -496px -90px}
+.snapscreen           { background-position: -434px -90px}
+.rowspacingtop        { background-position: -341px -90px}
+.rowspacingbottom     { background-position: -372px -90px}
+.lineheight           { background-position: -403px -90px}
+.scrawl               { background-position: -308px -90px}
+.music                { background-position: -122px -90px}
+.template             { background-position: -248px -90px}
+.background           { background-position: -279px -90px}
+.touppercase          { background-position: -188px -90px}
+.tolowercase          { background-position: -221px -90px}
+.webapp               { background-position: -156px -88px}
+.charts               { background-position: -62px -88px}
+.drafts               { background-position: -92px -88px}
+
+
+

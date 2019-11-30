@@ -1,0 +1,160 @@
+@import 'public';
+
+// 补丁 base
+@import '@/assets/styles/fixed/base.scss';
+// 补丁 element
+@import '@/assets/styles/fixed/element.scss';
+// 补丁 markdown
+@import '@/assets/styles/fixed/markdown.scss';
+// 补丁 n-progress
+@import '@/assets/styles/fixed/n-progress.scss';
+// 补丁 vue-splitpane
+@import '@/assets/styles/fixed/vue-splitpane.scss';
+// 补丁 vue-grid-layout
+@import '@/assets/styles/fixed/vue-grid-layout.scss';
+// 补丁 tree-view
+@import '@/assets/styles/fixed/tree-view.scss';
+// 补丁 print
+@import '@/assets/styles/fixed/print.scss';
+// 动画
+@import '@/assets/styles/animate/vue-transition.scss';
+
+//图标
+@import '@/assets/styles/iconfont/icon.scss';
+
+//组件
+@import '@/assets/styles/components/avatar.scss';
+@import '@/assets/styles/components/search-form.scss';
+@import '@/assets/styles/components/selector.scss';
+@import '@/assets/styles/components/list.scss';
+@import '@/assets/styles/components/toolbar.scss';
+@import '@/assets/styles/components/panel.scss';
+@import '@/assets/styles/components/table.scss';
+// 在这里写公用的class
+// 注意 这个文件里只写class
+// mixin等内容请在 public.scss 里书写
+
+// 文字相关
+.#{$prefix}-tc {
+  text-align: center;
+}
+.#{$prefix}-tr {
+  text-align: right !important;
+}
+.#{$prefix}-tl {
+  text-align: left;
+}
+//文字省略
+.#{$prefix}-ellipsis{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.#{$prefix}-help-block{
+  display: block;
+  color: #737373;
+}
+
+.#{$prefix}-dashed{
+  border-top-style: dashed!important;
+}
+.#{$prefix}-solid{
+    border-top-style: solid !important;
+}
+
+.#{$prefix}-desc{
+  margin: 10px;
+  .title{
+    margin-left: 10px;
+    color: #000000d9;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .divider{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    border-top-color: #aab2bd;
+    border-top-style: dashed;
+    border-top-width: 1px;
+  }
+  .desc{
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #545454;
+  }
+
+}
+
+.#{$prefix}-page-header-title{
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-indent: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  border-left: 5px solid $color-primary;
+}
+
+// 浮动相关
+.#{$prefix}-fl {
+  float: left;
+}
+.#{$prefix}-fr {
+  float: right;
+}
+.#{$prefix}-clearfix:before,
+.#{$prefix}-clearfix:after {
+  display: table;
+  content: "";
+}
+.#{$prefix}-clearfix:after {
+  clear: both
+}
+
+
+// 边距相关
+$sizes: (0, 5, 10, 15, 20);
+
+@for $index from 1 to 6 {
+  .#{$prefix}-m-#{nth($sizes, $index)} { margin: #{nth($sizes, $index)}px !important; }
+  .#{$prefix}-mt-#{nth($sizes, $index)} { margin-top: #{nth($sizes, $index)}px !important; }
+  .#{$prefix}-mr-#{nth($sizes, $index)} { margin-right: #{nth($sizes, $index)}px !important; }
+  .#{$prefix}-mb-#{nth($sizes, $index)} { margin-bottom: #{nth($sizes, $index)}px !important; }
+  .#{$prefix}-ml-#{nth($sizes, $index)} { margin-left: #{nth($sizes, $index)}px !important; }
+
+  .#{$prefix}-p-#{nth($sizes, $index)} { padding: #{nth($sizes, $index)}px !important; }
+  .#{$prefix}-pt-#{nth($sizes, $index)} { padding-top: #{nth($sizes, $index)}px !important; }
+  .#{$prefix}-pr-#{nth($sizes, $index)} { padding-right: #{nth($sizes, $index)}px !important; }
+  .#{$prefix}-pb-#{nth($sizes, $index)} { padding-bottom: #{nth($sizes, $index)}px !important; }
+  .#{$prefix}-pl-#{nth($sizes, $index)} { padding-left: #{nth($sizes, $index)}px !important; }
+}
+
+// 快速使用
+
+.#{$prefix}-m { margin: 20px !important; }
+.#{$prefix}-mt { margin-top: 20px !important; }
+.#{$prefix}-mr { margin-right: 20px !important; }
+.#{$prefix}-mb { margin-bottom: 20px !important; }
+.#{$prefix}-ml { margin-left: 20px !important; }
+
+.#{$prefix}-p { padding: 20px !important; }
+.#{$prefix}-pt { padding-top: 20px !important; }
+.#{$prefix}-pr { padding-right: 20px !important; }
+.#{$prefix}-pb { padding-bottom: 20px !important; }
+.#{$prefix}-pl { padding-left: 20px !important; }
+
+
+.red {
+  color: #dd5a43 !important;
+}
+.green {
+  color: #69aa46 !important;
+}

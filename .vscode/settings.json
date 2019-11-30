@@ -1,0 +1,23 @@
+{
+  //配置eslint
+  "files.autoSave":"off",
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "vue-html",
+      {
+        "language": "vue",
+        "autoFix": true
+      }
+  ],
+  "eslint.run": "onSave",
+   //为了符合eslint的两个空格间隔原则
+ "editor.tabSize": 2,
+   // 控制是否将打开的编辑器显示为预览。预览编辑器将会重用至其被保留(例如，通过双击或编辑)，且其字体样式将为斜体。
+  "workbench.editor.enablePreview": false,
+  "search.exclude": {
+    "**/dist": true,
+    "**/static": true
+  },
+}

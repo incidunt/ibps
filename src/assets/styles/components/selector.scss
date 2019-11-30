@@ -1,0 +1,104 @@
+@import "element-ui/packages/theme-chalk/src/mixins/mixins.scss";
+@import "element-ui/packages/theme-chalk/src/input.scss";
+
+/* TreeSelect
+-------------------------- */
+$--selector-input-focus-background: $--color-primary !default;
+$--selector-multiple-input-color: #666 !default;
+$--selector-font-size: $--font-size-base !default;
+$--selector-dropdown-border: solid 1px $--border-color-light !default;
+$--selector-dropdown-background: $--color-white !default;
+$--selector-dropdown-shadow: $--box-shadow-light !default;
+$--selector-node-selected: $--color-primary !default;
+$--selector-dropdown-max-height: 274px !default;
+
+@include b(selector) {
+  position: relative;
+  font-size: $--font-size-base;
+
+  .el-input,
+  .el-input__inner {
+    cursor: pointer;
+  }
+
+
+
+  .el-icon-circle-close {
+    z-index: #{$--index-normal + 1};
+    transition: $--color-transition-base;
+
+    &:hover {
+      color: $--color-text-secondary;
+    }
+  }
+
+  .el-input {
+    &.is-focus .el-input__inner {
+      border-color: $--selector-input-focus-background;
+    }
+  }
+  //只读样式
+  .is-disabled.el-selector__readonly-text{
+    .el-input__inner{
+      background-color: initial; 
+      border: 0; 
+      color: initial;
+      cursor: not-allowed;
+      font-size: 0;
+    }
+  }
+  
+  @include e(input) {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: 15px;
+    color: $--selector-multiple-input-color;
+    font-size: $--selector-font-size;
+    appearance: none;
+    height: 28px;
+    background-color: transparent;
+    @include when(mini) {
+      height: 14px;
+    }
+  }
+
+  @include e(tags) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: normal;
+    white-space: normal;
+    z-index: $--index-normal;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .el-tag__close {
+    margin-top: -2px;
+  }
+
+  .el-tag {
+    box-sizing: border-box;
+    border-color: transparent;
+    margin: 2px 2px 2px 6px;
+    // background-color: #f0f2f5;
+
+    &__close.el-icon-close {
+      background-color: $--color-text-placeholder;
+      right: -7px;
+      top: 0;
+      color: $--color-white;
+
+      &:hover {
+        background-color: $--color-text-secondary;
+      }
+
+      &::before {
+        display: block;
+        transform: translate(0, .5px);
+      }
+    }
+  }
+}

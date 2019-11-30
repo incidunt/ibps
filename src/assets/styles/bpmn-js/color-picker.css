@@ -1,0 +1,45 @@
+
+.color-picker .djs-popup-header {
+  display: flex;
+  width: 80px;
+  flex-wrap: wrap
+}
+
+.color-picker .entry {
+  width: 20px;
+  height: 20px
+}
+.color-picker .djs-popup-header .entry{
+  padding: 0
+}
+
+
+.color-picker .djs-popup-header .entry[data-id=colorize-none] {
+  background-color: #fff;
+  border-color: #000
+}
+
+.color-picker .djs-popup-header .entry[data-id=colorize-blue] {
+  background-color: #bbdefb;
+  border-color: #1e88e5
+}
+
+.color-picker .djs-popup-header .entry[data-id=colorize-orange] {
+  background-color: #ffe0b2;
+  border-color: #fb8c00
+}
+
+.color-picker .djs-popup-header .entry[data-id=colorize-green] {
+  background-color: #c8e6c9;
+  border-color: #43a047
+}
+
+.color-picker .djs-popup-header .entry[data-id=colorize-red] {
+  background-color: #ffcdd2;
+  border-color: #e53935
+}
+
+.color-picker .djs-popup-header .entry[data-id=colorize-purple] {
+  background-color: #e1bee7;
+  border-color: #8e24aa
+}

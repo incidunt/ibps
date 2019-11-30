@@ -1,0 +1,94 @@
+//
+// Avatar
+// --------------------------------------------------
+@import '@/assets/styles/unit/color.scss';
+// medium / small / mini
+$--avatar-size:                     36px;
+$--avatar-size-medium:              48px;
+$--avatar-size-small:               24px;
+$--avatar-size-mini:                18px;
+
+
+
+// Base style
+.ibps-avatar {
+  display: inline-flex;
+  // overflow: hidden;
+  width: $--avatar-size;
+  height: $--avatar-size;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-position: center;
+  background-size: cover;
+  color: $color-white;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .image{
+    display: block;
+    position: relative;
+  }
+  .ibps-icon {
+    display: block;
+    font-size: $--avatar-size/2;
+  }
+  .text{
+    display: block;
+    position: relative;
+  }
+  &--rounded {
+    border-radius: .5rem;
+  }
+  &--square{
+     border-radius: 50%;
+  }
+
+  &__image-info{
+    font-size: .7em;
+    top:-.12em;
+  }
+  &__text-info{
+    font-size: 1.15em;
+    top: -.95em;
+  }
+  
+ // Avatar sizes
+
+  &--small {
+    width: $--avatar-size-small;
+    height: $--avatar-size-small;
+    font-size: ($--avatar-size-small/2);
+
+    > .ibps-icon {
+      font-size: ($--avatar-size-mini/2)
+    }
+  }
+  &--mini {
+    width: $--avatar-size-mini;
+    height: $--avatar-size-mini;
+    font-size: ($--avatar-size-mini/2);
+
+    > .ibps-icon {
+      font-size: ($--avatar-size-mini/2)
+    }
+  }
+
+  &--medium {
+    width: $--avatar-size-medium;
+    height: $--avatar-size-medium;
+    font-size: ($--avatar-size-medium/2);
+
+    > .ibps-icon {
+      font-size: ($--avatar-size-mini/2)
+    }
+  }
+
+  
+}
+
+

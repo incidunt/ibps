@@ -1,0 +1,86 @@
+.djs-minimap {
+  position: absolute;
+  bottom: 26px;
+  right:20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .36);
+  border-radius: 2px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  padding-bottom: 30px;
+  z-index:21
+}
+
+.djs-minimap,
+.djs-minimap:not(.open) {
+  overflow: hidden
+}
+
+.djs-minimap .map {
+  display: none
+}
+
+.djs-minimap.open .map {
+  display: block
+}
+
+.djs-minimap .map {
+  width: 201px;
+  height: 113px
+}
+
+.embedded .djs-minimap .map {
+  width: 171px;
+  height: 96px
+}
+
+.djs-minimap.open .toggle {
+  position: absolute;
+  right: 0;
+  padding: 6px;
+  z-index: 1
+}
+
+.djs-minimap .map {
+  cursor: crosshair
+}
+
+.djs-minimap .viewport {
+  fill: none;
+  stroke: none
+}
+
+.djs-minimap .viewport-dom {
+  position: absolute;
+  background: rgba(255, 116, 0, .25);
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: move
+}
+
+.djs-minimap:not(.open) {
+  display: none
+}
+
+.djs-minimap.open .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: hsla(0, 0%, 100%, .2);
+  pointer-events: none
+}
+
+.djs-minimap .cursor-crosshair {
+  cursor: crosshair
+}
+
+.djs-minimap .cursor-move {
+  cursor: move
+}

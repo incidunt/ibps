@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= webpackConfig.name %></title>
+    <style>
+     html,body,#app{height:100%;margin:0;padding:0}.ibps-home{background-color:#303133;height:100%;display:flex;flex-direction:column}.ibps-home__main{user-select:none;width:100%;flex-grow:1;display:flex;justify-content:center;align-items:center;flex-direction:column}.ibps-home__footer{width:100%;flex-grow:0;text-align:center;padding:1em 0}.ibps-home__footer>a{font-size:12px;color:#ababab;text-decoration:none}.ibps-home__loading{height:30px;width:30px;margin-bottom:10px}.ibps-home__title{color:#FFF;font-size:14px;margin-bottom:20px}.ibps-home__sub-title{color:#ababab;font-size:12px}[data-loader='circle-side']{position:relative;width:25px;height:25px;-webkit-animation:circle infinite .75s linear;-moz-animation:circle infinite .75s linear;-o-animation:circle infinite .75s linear;animation:circle infinite .75s linear;border:2px solid #fff;border-top-color:rgba(0,0,0,.2);border-right-color:rgba(0,0,0,.2);border-bottom-color:rgba(0,0,0,.2);border-radius:100%}@-webkit-keyframes circle{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@-moz-keyframes circle{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@-o-keyframes circle{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes circle{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>
+        Sorry, IBPS  platform  will not work properly without JavaScript support. Enable JavaScript for browsers and continue.
+      </strong>
+    </noscript>
+    <div id="app">
+      <div class="ibps-home">
+        <div class="ibps-home__main">
+            <div class="ibps-home__loading">
+                <div data-loader="circle-side"></div>
+            </div>
+            <div class="ibps-home__title">正在加载资源
+            </div>
+            <div class="ibps-home__sub-title">初次加载资源可能需要较多时间 请耐心等待</div>
+            </div>
+            <div class="ibps-home__footer">
+                <a
+                href="http://www.bpmhome.cn"
+                target="_blank">
+                2016-2019©广州流辰信息技术有限公司©版权所有
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

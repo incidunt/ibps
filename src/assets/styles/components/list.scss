@@ -1,0 +1,165 @@
+@import "element-ui/packages/theme-chalk/src/common/var.scss";
+
+.ibps-list {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  line-height: normal;
+  padding: 7px 16px;
+  clear: both;
+  color: $--color-text-regular;
+  font-size: $--size-base;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+
+  &:focus {
+    background: $--background-color-base;
+    outline: 0;
+  }
+
+  .el-badge__content {
+    top: 0;
+  }
+}
+
+.ibps-list-link,
+.ibps-list-link:active,
+.ibps-list-link:hover {
+  color: inherit;
+}
+
+.ibps-list-icon {
+  display: inline-block;
+  margin-right: 4px;
+  font-size: $--font-size-base;
+  vertical-align: middle;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.ibps-list-main {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ibps-list-title {
+  line-height: 24px;
+  font-size: $--font-size-base;
+}
+
+.ibps-list-label {
+  line-height: 1.2;
+  font-size: $--size-base;
+  color:$--color-text-secondary;
+}
+
+.ibps-list-selected {
+  .ibps-list-label {
+    color: inherit;
+  }
+
+  .ibps-list-footer {
+    color: inherit;
+  }
+
+  &:focus {
+    background: $--color-primary-light-9;
+  }
+}
+
+.ibps-list-selected,
+.ibps-list.ibps-list-selected:hover {
+  background: $--color-primary-light-8;
+}
+.ibps-list-selected,
+.ibps-list-selected:hover {
+  color:$--color-primary;
+}
+
+.ibps-list-footer {  
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 16px;
+  color: $--color-text-regular; 
+}
+
+.ibps-list-with-link {
+  .ibps-list-footer {
+    right: 32px;
+  }
+}
+
+.ibps-list-arrow {
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 16px;
+  font-size: $--font-size-base;
+}
+
+.ibps-list-focus,
+.ibps-list:hover {
+  background: $--background-color-base;
+}
+
+.ibps-list-disabled,
+.ibps-list-disabled:hover {
+  color: $--font-color-disabled-base;
+  cursor: not-allowed;
+}
+
+.ibps-list-disabled {
+  &:hover {
+    background-color: $--color-white;
+  }
+}
+
+.ibps-list-divided {
+  border-bottom: 1px solid $--border-color-base;
+
+  &:before {
+    content: "";
+    display: block;
+    margin: 0 -16px;
+    background-color:$--color-white;
+    position: relative;
+    top: -7px;
+  }
+}
+
+.ibps-list-medium {
+  .ibps-list {
+    padding: 7px 16px 8px;
+    font-size: $--font-size-base !important;
+  }
+}
+
+@-moz-document url-prefix() {
+  .ibps-list {
+    white-space: normal
+  }
+}
+
+.ibps-list-col-icon{ 
+  float:left;
+}
+.ibps-list-col-main{ 
+  margin :0 0 5px 10px;
+  overflow:hidden;  
+  p{
+    margin:2px 0;
+  }
+}
+.ibps-list-col-footer{
+  text-align: right;
+  p{
+    margin:2px 0 0 0;
+  }
+}
